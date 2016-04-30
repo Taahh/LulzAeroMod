@@ -1,0 +1,7 @@
+name: LulzAeroMod
+version: 1.5
+main: net.lulzcraft.lulzmod.LulzMain
+soft-depend: [Aero]
+website: www.lulzcraft.net/
+description: Plugin
+commands:

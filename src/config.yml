@@ -1,0 +1,16 @@
+# Plugin Config
+# Version 1.5
+
+server:
+	
+	# Define server name
+	name: name
+	
+	# Define server website
+	website: web
+	
+	# Admins
+	admins:
+		- TPhoenixG
+		- Explosives
+	
