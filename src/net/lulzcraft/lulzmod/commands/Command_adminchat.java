@@ -21,16 +21,14 @@ public class Command_adminchat extends SimpleCommand<LulzMain> {
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (args.length == 0) {
-			sender.sendMessage(ChatColor.RED + "Please provide a message!");
-			return false;
+		sender.sendMessage(ChatColor.RED + "Please provide a message!");
+		return true;
 		}
-		
 		if (!sender.hasPermission("lulzmod.adminchat")) {
-			sender.sendMessage(ChatColor.RED + "You have no permissions!");
-			return false;
+		sender.sendMessage(ChatColor.RED + "You have no permissions!");
+		return true;
 		}
 		AdminChat.adminChat(sender, StringUtils.join(args, " "));
-		
 		return true;
 	}
 
